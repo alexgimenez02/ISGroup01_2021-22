@@ -1,0 +1,519 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.4f1 (becced5a802b) revision 12504301'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1586; Version 2009; 64bit' Language: 'es' Physical Memory: 7986 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/andre/OneDrive/Documentos/temporal/ISGroup01_2021-22/P1/P1
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52312
+Successfully changed project path to: C:/Users/andre/OneDrive/Documentos/temporal/ISGroup01_2021-22/P1/P1
+C:/Users/andre/OneDrive/Documentos/temporal/ISGroup01_2021-22/P1/P1
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 35.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.4f1 (becced5a802b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/andre/OneDrive/Documentos/temporal/ISGroup01_2021-22/P1/P1/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
+    Vendor:   
+    VRAM:     4064 MB
+    Driver:   21.21.13.7654
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002669 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.483 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001674 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002030FDEF0B0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FE34010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C3BF020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FE44620 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CE0E020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FB61230 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002031045F010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FE44620 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CE3BE30 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C6CBFC0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 36.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.232 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1413 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.9 MB.
+System memory in use after: 69.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1856.
+Total: 2.571500 ms (FindLiveObjects: 0.181700 ms CreateObjectMapping: 0.055300 ms MarkObjects: 2.173300 ms  DeleteObjects: 0.160300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Player.prefab
+  artifactKey: Guid(22340b2d40354b1428a98808fb5c1e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player.prefab using Guid(22340b2d40354b1428a98808fb5c1e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb4edeed943db9481ce154c828d3eecf') in 0.158215 seconds
+  Import took 0.162493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 158.259430 seconds.
+  path: Assets/Input
+  artifactKey: Guid(12574e1861b3f9446b4d8a1bc67a5fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Input using Guid(12574e1861b3f9446b4d8a1bc67a5fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4aec3b177d4cfedba5c46119cd1ce86') in 0.012310 seconds
+  Import took 0.016555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087967 seconds.
+  path: Assets/Input/P1.inputactions
+  artifactKey: Guid(c1743ff9cd3d7bd4daea0aff4bae6d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Input/P1.inputactions using Guid(c1743ff9cd3d7bd4daea0aff4bae6d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c87c55cbb7cca9d7b493a52e19b124d') in 0.024670 seconds
+  Import took 0.028952 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000935 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002030C443980 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C6C3FB0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FF6A040 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FCFB020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FA5E9E0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C6C3FB0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CA979B0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000203103EB010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C53C5A0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C734660 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.065 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1395 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.2 MB.
+System memory in use after: 71.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1866.
+Total: 3.057100 ms (FindLiveObjects: 0.350800 ms CreateObjectMapping: 0.074500 ms MarkObjects: 2.568500 ms  DeleteObjects: 0.060700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001188 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000203118081D0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C6C3FB0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FF6A040 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020310D15020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C789AD0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C3B7010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CE0E020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C3B7010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C53C5A0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311B0A020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.039 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1395 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.2 MB.
+System memory in use after: 71.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1868.
+Total: 2.862400 ms (FindLiveObjects: 0.240600 ms CreateObjectMapping: 0.098800 ms MarkObjects: 2.413100 ms  DeleteObjects: 0.108400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.741581 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(2a21dc21ff9018346a1a7383f6bc3324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(2a21dc21ff9018346a1a7383f6bc3324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2d8317fe9b7f49f3436380150bb0ca') in 0.017370 seconds
+  Import took 0.021575 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000972 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002030C443980 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311843720 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311A1F650 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000203104FCFE0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020312241D20 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000203121352C0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CA979B0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000203103EB010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C53C5A0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311A37250 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.994 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.2 MB.
+System memory in use after: 71.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1871.
+Total: 2.117800 ms (FindLiveObjects: 0.196200 ms CreateObjectMapping: 0.059600 ms MarkObjects: 1.803100 ms  DeleteObjects: 0.057700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.767526 seconds.
+  path: Assets/Scripts/NewBehaviourScript.cs
+  artifactKey: Guid(ee2a015c26949e44ca83d198e1bdf85b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NewBehaviourScript.cs using Guid(ee2a015c26949e44ca83d198e1bdf85b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c6ee3e281317107bb98ca7566676fba') in 0.073896 seconds
+  Import took 0.078972 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000941 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000020311978200 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CD75010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002031166A9F0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311A27920 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020312241D20 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CD75010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CA979B0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311A27920 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C53C5A0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FB13020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.038 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1395 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.2 MB.
+System memory in use after: 71.3 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1872.
+Total: 3.942800 ms (FindLiveObjects: 0.289800 ms CreateObjectMapping: 0.312700 ms MarkObjects: 3.272400 ms  DeleteObjects: 0.066600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.012973 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(f46ec4c3d2fe2624fadab3cb5cd2e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(f46ec4c3d2fe2624fadab3cb5cd2e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b18c6ce7f718cfd8b1833ae16dc9e99c') in 0.015887 seconds
+  Import took 0.019619 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001054 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002030C443980 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C703D70 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FF6A040 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002031185D950 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030F63D020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311E9E1E0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CE0E020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CC83010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C401010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311A37250 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.019 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.3 MB.
+System memory in use after: 71.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1875.
+Total: 2.447400 ms (FindLiveObjects: 0.432700 ms CreateObjectMapping: 0.049000 ms MarkObjects: 1.861600 ms  DeleteObjects: 0.102900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 182.502361 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(f46ec4c3d2fe2624fadab3cb5cd2e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(f46ec4c3d2fe2624fadab3cb5cd2e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cbe789348343b9ac9eb29fb8c84e7f3') in 0.011863 seconds
+  Import took 0.015722 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001358 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000020332979080 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020312274010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FB13020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FC5B050 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030F372020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020312092B80 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020332876010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C80D220 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030C401010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FB13020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.004 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.3 MB.
+System memory in use after: 71.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1877.
+Total: 3.940700 ms (FindLiveObjects: 0.619900 ms CreateObjectMapping: 0.082300 ms MarkObjects: 3.173900 ms  DeleteObjects: 0.063200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.246971 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(f46ec4c3d2fe2624fadab3cb5cd2e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(f46ec4c3d2fe2624fadab3cb5cd2e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd120a8d7787d5f3ea16a805ea43cd051') in 0.020781 seconds
+  Import took 0.026777 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001396 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002030CC55A30 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311896340 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311EFC510 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000203116459C0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030F372020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311896340 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030CA979B0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020332896020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000203121BC4F0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311FF9710 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.069 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.3 MB.
+System memory in use after: 71.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1879.
+Total: 2.740200 ms (FindLiveObjects: 0.501400 ms CreateObjectMapping: 0.053200 ms MarkObjects: 2.098100 ms  DeleteObjects: 0.072800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000944 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000020310357370 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000203118F9C90 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FABF620 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030FC5B050 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002030F372020 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020332DD1890 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000203119330E0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020310CAF010 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311AE0AE0 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000020311A37250 doesn't match image C:\Users\andre\OneDrive\Documentos\temporal\ISGroup01_2021-22\P1\P1\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.083 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.3 MB.
+System memory in use after: 71.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1881.
+Total: 2.505800 ms (FindLiveObjects: 0.396500 ms CreateObjectMapping: 0.062900 ms MarkObjects: 1.940600 ms  DeleteObjects: 0.104600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 339.363169 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(f46ec4c3d2fe2624fadab3cb5cd2e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(f46ec4c3d2fe2624fadab3cb5cd2e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bcb49022d730a2109d3704efcb2d9dc') in 0.015006 seconds
+  Import took 0.024376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036572 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(f46ec4c3d2fe2624fadab3cb5cd2e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(f46ec4c3d2fe2624fadab3cb5cd2e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bcb49022d730a2109d3704efcb2d9dc') in 0.006172 seconds
+  Import took 0.011248 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
