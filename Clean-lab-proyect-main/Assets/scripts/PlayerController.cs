@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 playerPos, lastPosition;
     private float waitTime;
     private bool holdPiece;
+    private float fixTime = 2.0f;
 
 
     // Start is called before the first frame update
@@ -32,7 +33,7 @@ public class PlayerController : MonoBehaviour
         */
         playerPos = transform.position;
 
-        if(waitTime >= 3.0f && !holdPiece)
+        if(waitTime >= fixTime && !holdPiece)
         {
             //Show options
             //if(player on top of piece) 1. grab option 2. shield option
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour
             holdPiece = true;
             waitTime = 0.0f;
         }
-        else if(waitTime >= 3.0f && holdPiece)
+        else if(waitTime >= fixTime && holdPiece)
         {
             //Drop piece
 
