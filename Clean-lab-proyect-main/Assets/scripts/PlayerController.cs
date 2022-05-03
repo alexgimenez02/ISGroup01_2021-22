@@ -53,19 +53,26 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
     void LateUpdate()
     {
-        
-        if (playerPos == lastPosition)
+          
+       float distToLastPos = Vector3.Distance(playerPos,lastPosition); 
+       
+        if (distToLastPos < 0.3f)
         {
             waitTime += Time.deltaTime;
         }
         else
         {
             waitTime = 0.0f;
+            lastPosition = playerPos;   
         }
-        lastPosition = playerPos;
+        
     }
 
-    
+    public Vector3 getPlayerPosition()
+    {
+        return playerPos;
+    }
 }

@@ -293,6 +293,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1618236373555705056, guid: cd1cb5635f8dbe649adff6525a31cfd3,
+        type: 3}
+      propertyPath: playerDetection
+      value: 
+      objectReference: {fileID: 1915285907}
     - target: {fileID: 4160097904938921555, guid: cd1cb5635f8dbe649adff6525a31cfd3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -779,6 +784,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfedabf21b3d11b4788feef7d6f05f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2087335273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087335267}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3210471a7b99604db6e239d4dac1216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barDisplay: 0
+  playerController: {fileID: 2087335272}
+  pos: {x: 5, y: 10, z: 5}
+  size: {x: 60, y: 20}
+  emptyTex: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+  fullTex: {fileID: 10912, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1001 &1208824439995267090
 PrefabInstance:
   m_ObjectHideFlags: 0
