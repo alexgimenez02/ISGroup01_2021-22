@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
                 if(minDist == redPieces[key]) closePiece = key;
             }
 
-            if(closePiece != "" && redPieces[closePiece] < 35)
+            if(closePiece != "" && redPieces[closePiece] < 42)
             {
                 GameObject piece = GameObject.Find(closePiece);
                 currentPiece = piece;
@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Drop piece");
             waitTime = 0.0f;
             holdPiece = false;
-            currentPiece.transform.position = playerPos + new Vector3(0.0f,30.0f,0.0f);
+            currentPiece.transform.position = playerPos + new Vector3(0.0f,40.0f,0.0f);
         }
         if(!holdPiece)
         {
