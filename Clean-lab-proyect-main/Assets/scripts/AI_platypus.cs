@@ -15,6 +15,7 @@ public class AI_platypus : MonoBehaviour
     Seeker seeker;
     Rigidbody2D rb;
     private Dictionary<string, float> redPieces = new Dictionary<string, float>();
+    private parentPiece;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +23,10 @@ public class AI_platypus : MonoBehaviour
         playerPos = transform.position;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-
+        parentPiece = "pieces";
         for (int i = 0; i < 7; i++)
         {
-            string name = "piece" + (i + 1);
+            string name = parentPiece + "/piece" + (i + 1);
             GameObject piece = GameObject.Find(name);
             if (piece.gameObject.GetComponent<MeshRenderer>()) //Triangulos
             {

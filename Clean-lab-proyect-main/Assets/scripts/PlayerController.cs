@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public string color;
     private GameObject currentPiece;
     private Dictionary<string,float> redPieces = new Dictionary<string,float>();
+    private string parentPiece;
 
 
     // Start is called before the first frame update
@@ -20,9 +21,10 @@ public class PlayerController : MonoBehaviour
         lastPosition = playerPos;
         waitTime = 0.0f;
         holdPiece = false;
+        parentPiece = "pieces";
         for(int i = 0; i < 7; i++)
         {
-            string name = "piece" + (i + 1);
+            string name = parentPiece + "/piece" + (i + 1);
             GameObject piece = GameObject.Find(name); 
             if(piece.gameObject.GetComponent<MeshRenderer>()) //Triangulos
             {                 
@@ -40,7 +42,7 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             }
-        }
+        }  
     }
 
     // Update is called once per frame
@@ -48,10 +50,10 @@ public class PlayerController : MonoBehaviour
     {
         //TODO
         /*
-         1. Tiempo de espera cuando esta quieto
-         2. Mover pieza
-         3. Generar escudo
-         4. Dejar pieza
+         1. Tiempo de espera cuando esta quieto | Done
+         2. Mover pieza | Done
+         3. Generar escudo | ToBeDone
+         4. Dejar pieza | Done
          
          
         */
@@ -65,6 +67,7 @@ public class PlayerController : MonoBehaviour
 
         if(waitTime >= fixTime && !holdPiece)
         {
+
             float minDist = 200000000000;
             string closePiece = "";
             foreach (string key in redPieces.Keys)
@@ -73,7 +76,7 @@ public class PlayerController : MonoBehaviour
                 if(minDist == redPieces[key]) closePiece = key;
             }
 
-            if(closePiece != "" && redPieces[closePiece] < 42)
+            if(closePiece != "" && redPieces[closePiece] < 32)
             {
                 GameObject piece = GameObject.Find(closePiece);
                 currentPiece = piece;
@@ -91,7 +94,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Drop piece");
             waitTime = 0.0f;
             holdPiece = false;
-            currentPiece.transform.position = playerPos + new Vector3(0.0f,40.0f,0.0f);
+            currentPiece.transform.position = playerPos + new Vector3(0.0f,30.0f,0.0f);
         }
         if(!holdPiece)
         {
