@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Pathfinding {
 	/// <summary>
@@ -17,6 +18,61 @@ namespace Pathfinding {
 		/// <summary>The object that the AI should move to</summary>
 		public Transform target;
 		IAstarAI ai;
+		private Vector3 playerPos;
+		private Dictionary<string, float> redPieces = new Dictionary<string, float>();
+		private string parentPiece;
+
+		void Start()
+        {
+			playerPos = transform.position;
+			parentPiece = "pieces";
+			for (int i = 0; i < 7; i++)
+			{
+				string name = parentPiece + "/piece" + (i + 1);
+				GameObject piece = GameObject.Find(name);
+				if (piece.gameObject.GetComponent<MeshRenderer>()) //Triangulos
+				{
+					redPieces.Add(name, Vector3.Distance(piece.gameObject.transform.position, playerPos));
+				}
+				else
+				{
+					if (piece.gameObject.GetComponent<SpriteRenderer>()) //Rombos
+					{
+						redPieces.Add(name, Vector3.Distance(piece.gameObject.transform.position, playerPos));
+					}
+				}
+			}
+
+			float randomNumber = Random.Range(0, redPieces.Count);
+			string randomPiece = "";
+			int temp = 0;
+			foreach (string key in redPieces.Keys)
+			{
+				if (temp == randomNumber) randomPiece = key;
+				temp++;
+			}
+			GameObject obj_piece = GameObject.Find(randomPiece);
+			target = obj_piece.gameObject.transform;
+			InvokeRepeating("UpdatePath", 0f, 0.2f);
+		}
+
+		void UpdatePath()
+		{
+			float distancetoPiece = ai.remainingDistance;
+			if(distancetoPiece < 0.1)
+            {
+				float randomNumber = Random.Range(0, redPieces.Count);
+				string randomPiece = "";
+				int i = 0;
+				foreach (string key in redPieces.Keys)
+				{
+					if (i == randomNumber) randomPiece = key;
+					i++;
+				}
+				GameObject obj_piece = GameObject.Find(randomPiece);
+				target = obj_piece.gameObject.transform;
+			}
+		}
 
 		void OnEnable () {
 			ai = GetComponent<IAstarAI>();
