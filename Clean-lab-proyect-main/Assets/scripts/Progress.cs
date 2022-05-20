@@ -7,21 +7,8 @@ public class Progress : MonoBehaviour {
     public PlayerController playerController;
     public Vector3 pos;
     public Vector2 size = new Vector2(30,20);
-    public Texture2D emptyTex;
-    public Texture2D fullTex;
- 
-    /*void OnGUI() {
-       //draw the background:
-        GUI.BeginGroup(new Rect(pos.x, pos.z, size.x, size.y));
-        GUI.Box(new Rect(pos.x,pos.z, size.x, size.y), emptyTex);
- 
-         //draw the filled-in part:
-        GUI.BeginGroup(new Rect(pos.x,pos.z, size.x * barDisplay, size.y));
-        GUI.Box(new Rect(pos.x,pos.z, size.x, size.y), fullTex);
-        GUI.EndGroup();
-        GUI.EndGroup();
-    }*/
- 
+    public progressbar progressbar;
+
     void Update() {
        //for this example, the bar display is linked to the current time,
        //however you would set this value based on your desired display
@@ -30,6 +17,24 @@ public class Progress : MonoBehaviour {
        new Rect(pos.x, pos.z, size.x, size.y);
        new Rect(pos.x,pos.z, size.x * barDisplay, size.y);
        pos = playerController.getPlayerPosition() + new Vector3(0.0f, 10.0f, 0.0f);
-       //   barDisplay = MyControlScript.staticHealth;
+        //   barDisplay = MyControlScript.staticHealth;
+       progressbar.modifyBarPosition(pos);
+    }
+
+    public void activateProgressBar()
+    {
+        progressbar.Awake();
+    }
+    public void deactivateProgressBar()
+    {
+        progressbar.Sleep();
+    }
+    public void setProgressBarInPosition(bool boolean)
+    {
+        progressbar.setInPosition(boolean);
+    }
+    public void setFillToZero()
+    {
+        progressbar.FillToZero();
     }
 }

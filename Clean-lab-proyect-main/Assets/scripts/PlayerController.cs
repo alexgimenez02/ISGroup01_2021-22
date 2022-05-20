@@ -58,10 +58,15 @@ public class PlayerController : MonoBehaviour
          
         */
         playerPos = transform.position;
-
+        if(waitTime >= fixTime)
+        {
+            Debug.Log("Entro aqui!");
+            Progress progbar;
+            if (transform.TryGetComponent(out progbar)) progbar.deactivateProgressBar();
+        }
         if(holdPiece && currentPiece != null)
         {
-            Debug.Log("Moving piece");
+            //Debug.Log("Moving piece");
             currentPiece.transform.position = playerPos + new Vector3(0.0f,2.0f,0.0f);
         }
 
@@ -81,17 +86,19 @@ public class PlayerController : MonoBehaviour
                 GameObject piece = GameObject.Find(closePiece);
                 currentPiece = piece;
                 holdPiece = true;
-                Debug.Log("Hold piece!");
+                //Debug.Log("Hold piece!");
             }
 
             //Debug.Log("Hold or shield piece");
+            
             waitTime = 0.0f;
+            
         }
         else if(waitTime >= fixTime && holdPiece)
         {
             //Drop piece
 
-            Debug.Log("Drop piece");
+            //Debug.Log("Drop piece");
             waitTime = 0.0f;
             holdPiece = false;
             currentPiece.transform.position = playerPos + new Vector3(0.0f,30.0f,0.0f);
@@ -108,25 +115,32 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Q))
         {
             holdPiece = false;
+            currentPiece.transform.position = playerPos + new Vector3(0.0f, 30.0f, 0.0f);
             Debug.Log("Debug Piece Drop!");
         }
         if(Input.GetKeyDown(KeyCode.T))
             Debug.Log("WaitTime is: " + waitTime);
+
     }
 
     void LateUpdate()
     {
           
-       float distToLastPos = Vector3.Distance(playerPos,lastPosition); 
-       
+       float distToLastPos = Vector3.Distance(playerPos,lastPosition);
+        Progress progbar;
         if (distToLastPos < 0.3f)
         {
+            if (waitTime == 0.0f)
+            {
+                if(transform.TryGetComponent(out progbar)) progbar.activateProgressBar();
+            }
             waitTime += Time.deltaTime;
         }
         else
         {
+            if (transform.TryGetComponent(out progbar)) progbar.deactivateProgressBar();
             waitTime = 0.0f;
-            lastPosition = playerPos;   
+            lastPosition = playerPos;
         }
         
     }
