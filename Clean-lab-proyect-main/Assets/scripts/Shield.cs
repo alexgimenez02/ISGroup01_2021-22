@@ -17,11 +17,11 @@ public class Shield : MonoBehaviour
     {
         
     }
-    public void Awake()
+    public  void Awake()
     {
         shield.SetActive(true);
     }
-    public void Sleep()
+    public  void Sleep()
     {
         shield.SetActive(false);
     }
