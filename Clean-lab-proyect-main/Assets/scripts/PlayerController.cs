@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private GameObject currentPiece;
     private Dictionary<string,float> redPieces = new Dictionary<string,float>();
     private string parentPiece;
+    public Shield shield;
 
 
     // Start is called before the first frame update
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             }
-        }  
+        }
     }
 
     // Update is called once per frame
@@ -52,8 +53,9 @@ public class PlayerController : MonoBehaviour
         /*
          1. Tiempo de espera cuando esta quieto | Done
          2. Mover pieza | Done
-         3. Generar escudo | ToBeDone
+         3. Generar escudo | Done
          4. Dejar pieza | Done
+         5. Funcionalidad escudo | ToDo
          
          
         */
@@ -89,6 +91,10 @@ public class PlayerController : MonoBehaviour
                 //Debug.Log("Hold piece!");
             }
 
+            if(redPieces[closePiece] > 32 && !shield.isActive())
+            {
+                shield.Awake();
+            }
             //Debug.Log("Hold or shield piece");
             
             waitTime = 0.0f;
@@ -125,8 +131,7 @@ public class PlayerController : MonoBehaviour
 
     void LateUpdate()
     {
-          
-       float distToLastPos = Vector3.Distance(playerPos,lastPosition);
+        float distToLastPos = Vector3.Distance(playerPos,lastPosition);
         Progress progbar;
         if (distToLastPos < 0.3f)
         {
@@ -141,6 +146,7 @@ public class PlayerController : MonoBehaviour
             if (transform.TryGetComponent(out progbar)) progbar.deactivateProgressBar();
             waitTime = 0.0f;
             lastPosition = playerPos;
+            if (shield.isActive()) shield.Sleep();
         }
         
     }
