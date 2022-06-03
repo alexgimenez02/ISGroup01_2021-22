@@ -1,7 +1,8 @@
+using UnityEngine;
 #if UNITY_EDITOR
- using UnityEngine;
  using UnityEditor;
 #endif
+
 
 public class TrianglePrimitive
 {
@@ -39,14 +40,16 @@ public class TrianglePrimitive
  
          filter.sharedMesh = mesh;
          collider.sharedMesh = mesh;
-         renderer.sharedMaterial = AssetDatabase.GetBuiltinExtraResource<Material>("Default-Material.mat");
- 
+#if UNITY_EDITOR
+        renderer.sharedMaterial = AssetDatabase.GetBuiltinExtraResource<Material>("Default-Material.mat");
+#endif
          return obj;
      }
- 
-     [MenuItem("GameObject/3D Object/Triangle", false, 0)]
+
+#if UNITY_EDITOR
+    [MenuItem("GameObject/3D Object/Triangle", false, 0)]
      public static void Create() {
          CreateObject();
      }
-
+#endif
 }
