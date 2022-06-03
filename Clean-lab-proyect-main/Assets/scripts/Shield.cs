@@ -6,16 +6,25 @@ public class Shield : MonoBehaviour
 {
 
     public GameObject shield;
+    private bool colision;
+    private float timer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        colision = false;
+        timer = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        /*checkColision();
+        if(colision)
+        {
+            Debug.Log("Chicken colision");
+        }
+        colision = false;*/
+        timer += 0.1f;
     }
     public  void Awake()
     {
@@ -29,5 +38,13 @@ public class Shield : MonoBehaviour
     public bool isActive()
     {
         return shield.active;
+    }
+    private void checkColision()
+    {
+        if(timer > 30.0f)
+        {
+            colision = true;
+            timer = 0.0f;
+        }
     }
 }

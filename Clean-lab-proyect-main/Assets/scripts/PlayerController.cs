@@ -62,14 +62,14 @@ public class PlayerController : MonoBehaviour
         playerPos = transform.position;
         if(waitTime >= fixTime)
         {
-            Debug.Log("Entro aqui!");
+            //Debug.Log("Entro aqui!");
             Progress progbar;
             if (transform.TryGetComponent(out progbar)) progbar.deactivateProgressBar();
         }
         if(holdPiece && currentPiece != null)
         {
             //Debug.Log("Moving piece");
-            currentPiece.transform.position = playerPos + new Vector3(0.0f,2.0f,0.0f);
+            currentPiece.transform.position = playerPos + new Vector3(0.0f,30.0f,0.0f);
         }
 
         if(waitTime >= fixTime && !holdPiece)
@@ -86,17 +86,26 @@ public class PlayerController : MonoBehaviour
             if(closePiece != "" && redPieces[closePiece] < 32)
             {
                 GameObject piece = GameObject.Find(closePiece);
-                currentPiece = piece;
-                holdPiece = true;
-                //Debug.Log("Hold piece!");
+                TangramPiece tangramPiece;
+                bool inPos = false;
+                if (piece.TryGetComponent(out tangramPiece)) inPos = tangramPiece.getInPosition();
+                
+                if(!inPos)
+                {
+                    currentPiece = piece;
+                    holdPiece = true;
+                }
+                else
+                {
+                    shield.Awake();
+                }
             }
 
             if(redPieces[closePiece] > 32 && !shield.isActive())
             {
                 shield.Awake();
             }
-            //Debug.Log("Hold or shield piece");
-            
+                        
             waitTime = 0.0f;
             
         }
@@ -104,10 +113,9 @@ public class PlayerController : MonoBehaviour
         {
             //Drop piece
 
-            //Debug.Log("Drop piece");
             waitTime = 0.0f;
             holdPiece = false;
-            currentPiece.transform.position = playerPos + new Vector3(0.0f,30.0f,0.0f);
+            //currentPiece.transform.position = playerPos + new Vector3(0.0f, 30.0f, 0.0f);
         }
         if(!holdPiece)
         {
