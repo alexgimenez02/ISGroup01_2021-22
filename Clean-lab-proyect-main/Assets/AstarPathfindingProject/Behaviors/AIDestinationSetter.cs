@@ -21,6 +21,8 @@ namespace Pathfinding {
 		private Vector3 playerPos;
 		private Dictionary<string, float> redPieces = new Dictionary<string, float>();
 		private string parentPiece;
+		bool holdPiece = false;
+		GameObject currentPiece;
 
 		void Start()
         {
@@ -53,14 +55,44 @@ namespace Pathfinding {
 			}
 			GameObject obj_piece = GameObject.Find(randomPiece);
 			target = obj_piece.gameObject.transform;
-			InvokeRepeating("UpdatePath", 0f, 0.2f);
+			currentPiece = obj_piece;
+			InvokeRepeating("UpdatePath", 0f, 1f);
 		}
 
+		/*
+		 * TODO: 
+		 * 1. LLEVAR PIEZA A SITIO ALEATORIO
+		 * 2. BARRERA
+		 */
 		void UpdatePath()
 		{
 			float distancetoPiece = ai.remainingDistance;
-			if(distancetoPiece < 0.1)
-            {
+			if(distancetoPiece < 0.2)
+			{
+				if (holdPiece == true)
+				{
+					/* Si arreglo esto, deberia poder hacer lo de mover piezas
+					GameObject obj_piece = GameObject.Find("esquina1");
+					target = obj_piece.gameObject.transform;
+					 */
+					holdPiece = false;
+				}
+				else
+				{
+					currentPiece = target.gameObject;
+					holdPiece = true;
+
+					/*float randomNumber = Random.Range(0, redPieces.Count);
+					string randomPiece = "";
+					int i = 0;
+					foreach (string key in redPieces.Keys)
+					{
+						if (i == randomNumber) randomPiece = key;
+						i++;
+					}
+					GameObject obj_piece = GameObject.Find(randomPiece);
+					target = obj_piece.gameObject.transform;*/
+				}
 				float randomNumber = Random.Range(0, redPieces.Count);
 				string randomPiece = "";
 				int i = 0;
@@ -90,6 +122,8 @@ namespace Pathfinding {
 		/// <summary>Updates the AI's destination every frame</summary>
 		void Update () {
 			if (target != null && ai != null) ai.destination = target.position;
+			playerPos = transform.position;
+			if (holdPiece == true) currentPiece.transform.position = playerPos;
 		}
 	}
 }
