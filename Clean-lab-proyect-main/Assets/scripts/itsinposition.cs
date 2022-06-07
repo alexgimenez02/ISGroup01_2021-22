@@ -1,37 +1,68 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+using System.Threading;
+using UnityEngine.UI;
 
 public class itsinposition : MonoBehaviour
 {
     public TangramPiece relativePiece;
     private bool once;
+    private int total = 0;
+    public Material material1;
+    public GameObject Object;
+    public Text wintext;
     // Start is called before the first frame update
     void Start()
     {
         once = false;
+        wintext.text = "";
     }
 
     void Update()
     {
         //if(chicken.chickenHasPiece())
-        if(Vector3.Distance(relativePiece.transform.position,transform.position) < 2.1f)
+        if (Vector3.Distance(relativePiece.transform.position, transform.position) < 2.1f)
         {
             relativePiece.transform.position = transform.position;
             relativePiece.assertInPosition();
-            if(!once)
+            if (!once)
             {
                 Debug.Log(relativePiece.gameObject.name + " in position!");
                 once = true;
+                total = total + 1;
+               
+                    if (Object.gameObject.GetComponent<MeshRenderer>())
+                    { //triángulos
+
+                        Object.GetComponent<MeshRenderer>().material = material1;
+                    }
+
+                    if (Object.gameObject.GetComponent<SpriteRenderer>())
+                    {
+
+                        Object.GetComponent<SpriteRenderer>().material = material1;
+                    }//rombos
+                }
             }
-        }
+        
         else
         {
             relativePiece.restartPiece();
+            total = total - 1;
         }
 
-        if(Input.GetKeyDown(KeyCode.P))
+        if (total == 7)
+        {
+            wintext.text = "You win!";
+            Time.timeScale = 0;
+            Thread.Sleep(5000);
+            SceneManager.LoadScene("Scene2");
+        }
+
+        if (Input.GetKeyDown(KeyCode.P)) {
             Debug.Log("Piece " + relativePiece.gameObject.name + " distance to position: " + Vector3.Distance(relativePiece.transform.position, transform.position));
+        }
     }
 }
