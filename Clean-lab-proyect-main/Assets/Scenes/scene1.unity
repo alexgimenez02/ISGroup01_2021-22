@@ -651,7 +651,7 @@ PrefabInstance:
     - target: {fileID: 746186707522591666, guid: cd1cb5635f8dbe649adff6525a31cfd3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.747
+      value: 9.26
       objectReference: {fileID: 0}
     - target: {fileID: 746186707522591666, guid: cd1cb5635f8dbe649adff6525a31cfd3,
         type: 3}
@@ -1054,6 +1054,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 717220928}
+  - component: {fileID: 717220929}
   m_Layer: 0
   m_Name: Tangram
   m_TagString: Untagged
@@ -1082,6 +1083,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &717220929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717220927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd9c6f9bc2b51547b8c759e218b0d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPieces: 7
 --- !u!1 &759581103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,7 +2454,7 @@ MonoBehaviour:
   relativePiece: {fileID: 417493938}
   material1: {fileID: 2100000, guid: 34a202686ef8e9148bb37e7d7dec1b84, type: 2}
   Object: {fileID: 417493933}
-  wintext: {fileID: 1231026645}
+  checker: {fileID: 717220929}
 --- !u!1 &1441496965
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,8 +2545,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441496965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.103462, y: 4.5, z: 45.816044}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 50.612, y: -28.6, z: 45.2658}
+  m_LocalScale: {x: 11.508046, y: 10, z: 11.601687}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
@@ -2713,7 +2727,7 @@ MonoBehaviour:
   relativePiece: {fileID: 1791407043}
   material1: {fileID: 2100000, guid: 34a202686ef8e9148bb37e7d7dec1b84, type: 2}
   Object: {fileID: 1791407038}
-  wintext: {fileID: 1231026645}
+  checker: {fileID: 717220929}
 --- !u!850595691 &1521558571
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -3165,7 +3179,7 @@ MonoBehaviour:
   relativePiece: {fileID: 1381980788}
   material1: {fileID: 2100000, guid: 34a202686ef8e9148bb37e7d7dec1b84, type: 2}
   Object: {fileID: 1381980783}
-  wintext: {fileID: 1231026645}
+  checker: {fileID: 717220929}
 --- !u!1 &1681546032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,7 +3346,7 @@ MonoBehaviour:
   relativePiece: {fileID: 848690786}
   material1: {fileID: 2100000, guid: 34a202686ef8e9148bb37e7d7dec1b84, type: 2}
   Object: {fileID: 848690783}
-  wintext: {fileID: 1231026645}
+  checker: {fileID: 717220929}
 --- !u!54 &1703801343
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3478,7 +3492,7 @@ MonoBehaviour:
   relativePiece: {fileID: 877710993}
   material1: {fileID: 2100000, guid: 34a202686ef8e9148bb37e7d7dec1b84, type: 2}
   Object: {fileID: 877710988}
-  wintext: {fileID: 1231026645}
+  checker: {fileID: 717220929}
 --- !u!1 &1791407038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4190,7 +4204,7 @@ MonoBehaviour:
   relativePiece: {fileID: 759581108}
   material1: {fileID: 2100000, guid: 34a202686ef8e9148bb37e7d7dec1b84, type: 2}
   Object: {fileID: 759581103}
-  wintext: {fileID: 1231026645}
+  checker: {fileID: 717220929}
 --- !u!1 &2067865202
 GameObject:
   m_ObjectHideFlags: 0
@@ -4291,7 +4305,7 @@ MonoBehaviour:
   relativePiece: {fileID: 2056897671}
   material1: {fileID: 2100000, guid: 34a202686ef8e9148bb37e7d7dec1b84, type: 2}
   Object: {fileID: 2056897668}
-  wintext: {fileID: 1231026645}
+  checker: {fileID: 717220929}
 --- !u!54 &2067865207
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4987,7 +5001,7 @@ PrefabInstance:
     - target: {fileID: 6137497491829922048, guid: a2aaaa094093a294aade9f5a5ce62bbb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.578
+      value: 9.24
       objectReference: {fileID: 0}
     - target: {fileID: 6137497491829922048, guid: a2aaaa094093a294aade9f5a5ce62bbb,
         type: 3}

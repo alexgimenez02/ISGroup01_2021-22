@@ -9,15 +9,13 @@ public class itsinposition : MonoBehaviour
 {
     public TangramPiece relativePiece;
     private bool once;
-    private int total = 0;
     public Material material1;
     public GameObject Object;
-    public Text wintext;
+    public PiecesInPosition checker;
     // Start is called before the first frame update
     void Start()
     {
         once = false;
-        wintext.text = "";
     }
 
     void Update()
@@ -31,7 +29,7 @@ public class itsinposition : MonoBehaviour
             {
                 Debug.Log(relativePiece.gameObject.name + " in position!");
                 once = true;
-                total = total + 1;
+                checker.addPiece();
                
                     if (Object.gameObject.GetComponent<MeshRenderer>())
                     { //triángulos
@@ -50,15 +48,7 @@ public class itsinposition : MonoBehaviour
         else
         {
             relativePiece.restartPiece();
-            total = total - 1;
-        }
-
-        if (total == 7)
-        {
-            wintext.text = "You win!";
-            Time.timeScale = 0;
-            Thread.Sleep(5000);
-            SceneManager.LoadScene("Scene2");
+            checker.deletePiece();
         }
 
         if (Input.GetKeyDown(KeyCode.P)) {
