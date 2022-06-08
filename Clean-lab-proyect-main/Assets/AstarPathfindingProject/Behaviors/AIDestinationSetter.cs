@@ -44,45 +44,23 @@ namespace Pathfinding {
 					}
 				}
 			}
-
-			float randomNumber = Random.Range(0, redPieces.Count);
-			string randomPiece = "";
-			int temp = 0;
-			foreach (string key in redPieces.Keys)
-			{
-				if (temp == randomNumber) randomPiece = key;
-				temp++;
-			}
-			GameObject obj_piece = GameObject.Find(randomPiece);
-			target = obj_piece.gameObject.transform;
-			currentPiece = obj_piece;
 			InvokeRepeating("UpdatePath", 0f, 1f);
 		}
 
 		/*
 		 * TODO: 
-		 * 1. LLEVAR PIEZA A SITIO ALEATORIO
+		 * 1. LLEVAR PIEZA A SITIO ALEATORIO (hacerlo al reves y ya estaria)
 		 * 2. BARRERA
 		 */
 		void UpdatePath()
 		{
 			float distancetoPiece = ai.remainingDistance;
-			if(distancetoPiece < 0.2)
+			if (distancetoPiece < 0.2)
 			{
 				if (holdPiece == true)
 				{
-					/* Si arreglo esto, deberia poder hacer lo de mover piezas
-					GameObject obj_piece = GameObject.Find("esquina1");
-					target = obj_piece.gameObject.transform;
-					 */
-					holdPiece = false;
-				}
-				else
-				{
-					currentPiece = target.gameObject;
-					holdPiece = true;
-
-					/*float randomNumber = Random.Range(0, redPieces.Count);
+					holdPiece = false; //Arreglar este booleano
+					float randomNumber = Random.Range(0, redPieces.Count);
 					string randomPiece = "";
 					int i = 0;
 					foreach (string key in redPieces.Keys)
@@ -91,18 +69,16 @@ namespace Pathfinding {
 						i++;
 					}
 					GameObject obj_piece = GameObject.Find(randomPiece);
-					target = obj_piece.gameObject.transform;*/
+					target = obj_piece.gameObject.transform;
 				}
-				float randomNumber = Random.Range(0, redPieces.Count);
-				string randomPiece = "";
-				int i = 0;
-				foreach (string key in redPieces.Keys)
+				else
 				{
-					if (i == randomNumber) randomPiece = key;
-					i++;
+					holdPiece = true;
+
+					currentPiece = target.gameObject;
+					GameObject obj_piece = GameObject.Find("esquina1");
+					target = obj_piece.gameObject.transform;
 				}
-				GameObject obj_piece = GameObject.Find(randomPiece);
-				target = obj_piece.gameObject.transform;
 			}
 		}
 
