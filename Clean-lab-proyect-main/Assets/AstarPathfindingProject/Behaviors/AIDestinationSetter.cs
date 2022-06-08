@@ -49,8 +49,7 @@ namespace Pathfinding {
 
 		/*
 		 * TODO: 
-		 * 1. LLEVAR PIEZA A SITIO ALEATORIO (hacerlo al reves y ya estaria)
-		 * 2. BARRERA
+		 * 1. Shield
 		 */
 		void UpdatePath()
 		{
@@ -75,8 +74,16 @@ namespace Pathfinding {
 				{
 					holdPiece = true;
 
+					GameObject obj_piece = null;
 					currentPiece = target.gameObject;
-					GameObject obj_piece = GameObject.Find("esquina1");
+					float randomNumber = Random.Range(0, 4);
+					switch (randomNumber)
+                    {
+						case 0: obj_piece = GameObject.Find("esquina1"); break;
+						case 1: obj_piece = GameObject.Find("esquina2"); break;
+						case 2: obj_piece = GameObject.Find("esquina3"); break;
+						case 3: obj_piece = GameObject.Find("esquina4"); break;
+					}
 					target = obj_piece.gameObject.transform;
 				}
 			}
