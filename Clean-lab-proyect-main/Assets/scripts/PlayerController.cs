@@ -142,7 +142,7 @@ public class PlayerController : MonoBehaviour
     {
         float distToLastPos = Vector3.Distance(playerPos,lastPosition);
         Progress progbar;
-        if (distToLastPos < 1.5f)
+        if (distToLastPos < 3.0f)
         {
             if(additionalWaitTime > additionalFixTime)
             {
