@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private Dictionary<string,float> redPieces = new Dictionary<string,float>();
     private string parentPiece;
     public Shield shield;
-
+    public AIDestinationSetter pollo;
 
     // Start is called before the first frame update
     void Start()
@@ -135,7 +136,25 @@ public class PlayerController : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.T))
             Debug.Log("WaitTime is: " + waitTime);
+        if (shield.isActive())
+        {
+            float distToLastPos = FlatDistance(playerPos, pollo.getPolloPosition());
+            Debug.Log(distToLastPos);
+            if (distToLastPos < 10.0f)
+            {
+                Debug.Log("Pollo y escudo");
+                pollo.setholdPiece(true);
+                pollo.UpdatePath();
+                //Falta que no coga la pieza, pero ya detecta el escudo
+            }
+        }
+    }
 
+    public static float FlatDistance(Vector3 pos1, Vector3 pos2)
+    {
+        pos1.y = pos1.z;
+        pos2.y = pos2.z;
+        return Vector2.Distance(pos1, pos2);
     }
 
     void LateUpdate()

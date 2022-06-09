@@ -2394,6 +2394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: PLAYER1
   shield: {fileID: 1447769358}
+  pollo: {fileID: 1010041351}
 --- !u!114 &1398140979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4740,6 +4741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: PLAYER2
   shield: {fileID: 1639448105}
+  pollo: {fileID: 1010041351}
 --- !u!114 &2087335273
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -53,7 +53,7 @@ namespace Pathfinding {
 		 * TODO: 
 		 * 1. Shield
 		 */
-		void UpdatePath()
+		public void UpdatePath()
 		{
 			float distancetoPiece = ai.remainingDistance;
 			if (distancetoPiece < 0.2)
@@ -112,5 +112,15 @@ namespace Pathfinding {
 			if (holdPiece == true) currentPiece.transform.position = playerPos - new Vector3(0.0f, 20.0f, 0.0f);
 
 		}
+
+		public Vector3 getPolloPosition()
+        {
+			return playerPos;
+        }
+
+		public void setholdPiece(bool hold)
+        {
+			holdPiece = hold;
+        }
 	}
 }
