@@ -48,7 +48,11 @@ public class itsinposition : MonoBehaviour
         else
         {
             relativePiece.restartPiece();
-            checker.deletePiece();
+            if (once)
+            {
+                checker.deletePiece();
+                once = false;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.P)) {

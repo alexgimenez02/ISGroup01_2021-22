@@ -8,9 +8,9 @@ using UnityEngine.UI;
 public class PiecesInPosition : MonoBehaviour
 {
     public int maxPieces;
-    private Text wintext;
+    public Text wintext;
 
-    private int posPieces;
+    public int posPieces;
     // Start is called before the first frame update
     void Start()
     {

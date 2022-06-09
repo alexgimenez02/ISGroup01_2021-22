@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chick_Animations
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: f688071401476a14a84f97ec807217f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f688071401476a14a84f97ec807217f7, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1176,6 +1180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPieces: 7
+  wintext: {fileID: 1231026645}
+  posPieces: 0
 --- !u!1 &759581103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,16 +2106,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231026643}
-  m_LocalRotation: {x: -0.04326367, y: -0.26411578, z: -0.011849357, w: 0.96344733}
-  m_LocalPosition: {x: 0, y: 0, z: -35.61262}
+  m_LocalRotation: {x: -0.044651654, y: -0.09574884, z: -0.0042908187, w: 0.9943943}
+  m_LocalPosition: {x: 0, y: 0, z: -45.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1208824439995267091}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: -174.858, y: -210.661, z: 180.001}
+  m_LocalEulerAnglesHint: {x: -174.858, y: -191, z: 180.001}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.004863739, y: -0.0035858154}
+  m_AnchoredPosition: {x: 0.004863739, y: -0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1231026645
@@ -2736,8 +2742,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441496965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.612, y: -28.6, z: 45.2658}
-  m_LocalScale: {x: 11.508046, y: 10, z: 11.601687}
+  m_LocalPosition: {x: 53.4, y: -28.6, z: 47.7}
+  m_LocalScale: {x: 13.035884, y: 10.732, z: 13.377279}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
