@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Vector3 playerPos, lastPosition;
-    private float waitTime;
+    private float waitTime, additionalWaitTime;
     private bool holdPiece;
-    private float fixTime = 2.0f;
+    private float fixTime = 1.5f, additionalFixTime = 0.5f;
     public string color;
     private GameObject currentPiece;
     private Dictionary<string,float> redPieces = new Dictionary<string,float>();
@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
         playerPos = transform.position;
         lastPosition = playerPos;
         waitTime = 0.0f;
+        additionalWaitTime = 0.0f;
         holdPiece = false;
         parentPiece = "pieces";
         for(int i = 0; i < 7; i++)
@@ -141,18 +142,23 @@ public class PlayerController : MonoBehaviour
     {
         float distToLastPos = Vector3.Distance(playerPos,lastPosition);
         Progress progbar;
-        if (distToLastPos < 0.3f)
+        if (distToLastPos < 1.5f)
         {
-            if (waitTime == 0.0f)
+            if(additionalWaitTime > additionalFixTime)
             {
-                if(transform.TryGetComponent(out progbar)) progbar.activateProgressBar();
+                if (waitTime == 0.0f)
+                {
+                    if(transform.TryGetComponent(out progbar)) progbar.activateProgressBar();
+                }
+                waitTime += Time.deltaTime;
             }
-            waitTime += Time.deltaTime;
+            additionalWaitTime += Time.deltaTime;
         }
         else
         {
             if (transform.TryGetComponent(out progbar)) progbar.deactivateProgressBar();
             waitTime = 0.0f;
+            additionalWaitTime = 0.0f;
             lastPosition = playerPos;
             if (shield.isActive()) shield.Sleep();
         }

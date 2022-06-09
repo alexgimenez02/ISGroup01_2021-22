@@ -17,11 +17,12 @@ namespace Pathfinding {
 	public class AIDestinationSetter : VersionedMonoBehaviour {
 		/// <summary>The object that the AI should move to</summary>
 		public Transform target;
+		private int numberpieces;
 		IAstarAI ai;
 		private Vector3 playerPos;
 		private Dictionary<string, float> redPieces = new Dictionary<string, float>();
 		private string parentPiece;
-		bool holdPiece = false;
+		bool holdPiece = false, isPieceInTarget = false;
 		GameObject currentPiece;
 
 		void Start()
@@ -44,6 +45,7 @@ namespace Pathfinding {
 					}
 				}
 			}
+			numberpieces = redPieces.Count;
 			InvokeRepeating("UpdatePath", 0f, 1f);
 		}
 
@@ -58,8 +60,8 @@ namespace Pathfinding {
 			{
 				if (holdPiece == true)
 				{
-					holdPiece = false; //Arreglar este booleano
-					float randomNumber = Random.Range(0, redPieces.Count);
+					holdPiece = false; 
+					float randomNumber = Random.Range(0, numberpieces);
 					string randomPiece = "";
 					int i = 0;
 					foreach (string key in redPieces.Keys)
@@ -69,11 +71,12 @@ namespace Pathfinding {
 					}
 					GameObject obj_piece = GameObject.Find(randomPiece);
 					target = obj_piece.gameObject.transform;
+					isPieceInTarget = true;
 				}
 				else
 				{
 					holdPiece = true;
-
+					isPieceInTarget = false;
 					GameObject obj_piece = null;
 					currentPiece = target.gameObject;
 					float randomNumber = Random.Range(0, 4);
@@ -106,7 +109,8 @@ namespace Pathfinding {
 		void Update () {
 			if (target != null && ai != null) ai.destination = target.position;
 			playerPos = transform.position;
-			if (holdPiece == true) currentPiece.transform.position = playerPos;
+			if (holdPiece == true) currentPiece.transform.position = playerPos - new Vector3(0.0f, 20.0f, 0.0f);
+
 		}
 	}
 }

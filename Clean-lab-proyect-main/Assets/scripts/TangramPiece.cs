@@ -5,7 +5,6 @@ using UnityEngine;
 public class TangramPiece : MonoBehaviour
 {
     private bool inPosition;
-    
     void Start()
     {
         inPosition = false;
