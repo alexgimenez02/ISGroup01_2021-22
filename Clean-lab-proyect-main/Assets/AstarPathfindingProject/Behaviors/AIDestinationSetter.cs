@@ -22,7 +22,7 @@ namespace Pathfinding {
 		private Vector3 playerPos;
 		private Dictionary<string, float> redPieces = new Dictionary<string, float>();
 		private string parentPiece;
-		bool holdPiece = false, isPieceInTarget = false;
+		bool holdPiece = false, isPieceInTarget = false, shieldActive = false;
 		GameObject currentPiece;
 
 		void Start()
@@ -58,9 +58,42 @@ namespace Pathfinding {
 			float distancetoPiece = ai.remainingDistance;
 			if (distancetoPiece < 0.2)
 			{
-				if (holdPiece == true)
-				{
-					holdPiece = false; 
+                if (!shieldActive)
+                {
+					if (holdPiece == true)
+					{
+						holdPiece = false;
+						float randomNumber = Random.Range(0, numberpieces);
+						string randomPiece = "";
+						int i = 0;
+						foreach (string key in redPieces.Keys)
+						{
+							if (i == randomNumber) randomPiece = key;
+							i++;
+						}
+						GameObject obj_piece = GameObject.Find(randomPiece);
+						target = obj_piece.gameObject.transform;
+						isPieceInTarget = true;
+					}
+					else
+					{
+						holdPiece = true;
+						isPieceInTarget = false;
+						GameObject obj_piece = null;
+						currentPiece = target.gameObject;
+						float randomNumber = Random.Range(0, 4);
+						switch (randomNumber)
+						{
+							case 0: obj_piece = GameObject.Find("esquina1"); break;
+							case 1: obj_piece = GameObject.Find("esquina2"); break;
+							case 2: obj_piece = GameObject.Find("esquina3"); break;
+							case 3: obj_piece = GameObject.Find("esquina4"); break;
+						}
+						target = obj_piece.gameObject.transform;
+					}
+				}
+                else
+                {
 					float randomNumber = Random.Range(0, numberpieces);
 					string randomPiece = "";
 					int i = 0;
@@ -70,23 +103,6 @@ namespace Pathfinding {
 						i++;
 					}
 					GameObject obj_piece = GameObject.Find(randomPiece);
-					target = obj_piece.gameObject.transform;
-					isPieceInTarget = true;
-				}
-				else
-				{
-					holdPiece = true;
-					isPieceInTarget = false;
-					GameObject obj_piece = null;
-					currentPiece = target.gameObject;
-					float randomNumber = Random.Range(0, 4);
-					switch (randomNumber)
-                    {
-						case 0: obj_piece = GameObject.Find("esquina1"); break;
-						case 1: obj_piece = GameObject.Find("esquina2"); break;
-						case 2: obj_piece = GameObject.Find("esquina3"); break;
-						case 3: obj_piece = GameObject.Find("esquina4"); break;
-					}
 					target = obj_piece.gameObject.transform;
 				}
 			}
@@ -118,9 +134,9 @@ namespace Pathfinding {
 			return playerPos;
         }
 
-		public void setholdPiece(bool hold)
+		public void setshieldactive(bool hold)
         {
-			holdPiece = hold;
+			shieldActive = hold;
         }
 	}
 }

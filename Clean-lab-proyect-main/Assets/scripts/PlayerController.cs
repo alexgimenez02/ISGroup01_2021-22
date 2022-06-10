@@ -142,12 +142,10 @@ public class PlayerController : MonoBehaviour
             Debug.Log(distToLastPos);
             if (distToLastPos < 10.0f)
             {
-                Debug.Log("Pollo y escudo");
-                pollo.setholdPiece(true);
-                pollo.UpdatePath();
-                //Falta que no coga la pieza, pero ya detecta el escudo
+                pollo.setshieldactive(true);
             }
         }
+        if(!shield.isActive()) pollo.setshieldactive(false);
     }
 
     public static float FlatDistance(Vector3 pos1, Vector3 pos2)
