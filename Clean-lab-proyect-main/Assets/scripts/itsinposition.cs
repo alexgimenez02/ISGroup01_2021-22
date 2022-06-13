@@ -10,6 +10,7 @@ public class itsinposition : MonoBehaviour
     public TangramPiece relativePiece;
     private bool once;
     public Material material1;
+    public Material material2;
     public GameObject Object;
     public PiecesInPosition checker;
     // Start is called before the first frame update
@@ -52,6 +53,17 @@ public class itsinposition : MonoBehaviour
             {
                 checker.deletePiece();
                 once = false;
+                if (Object.gameObject.GetComponent<MeshRenderer>())
+                { //triángulos
+
+                    Object.GetComponent<MeshRenderer>().material = material2;
+                }
+
+                if (Object.gameObject.GetComponent<SpriteRenderer>())
+                {
+
+                    Object.GetComponent<SpriteRenderer>().material = material2;
+                }//rombos
             }
         }
 
