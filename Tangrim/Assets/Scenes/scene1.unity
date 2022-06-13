@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPieces: 7
-  wintext: {fileID: 1231026645}
+  winTextObject: {fileID: 1231026643}
   posPieces: 0
 --- !u!1 &759581103
 GameObject:
@@ -3488,7 +3488,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 3625043607559282579, guid: 0d267bc78a0864eb48358689b29ed20a,
     type: 3}
-  m_Color: {r: 0.7176471, g: 0.627451, b: 0.1137255, a: 1}
+  m_Color: {r: 1, g: 1, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

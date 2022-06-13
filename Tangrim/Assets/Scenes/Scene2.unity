@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPieces: 8
-  wintext: {fileID: 833569435}
+  winTextObject: {fileID: 833569434}
   posPieces: 0
 --- !u!1 &729991966
 GameObject:
